@@ -50,7 +50,7 @@ public class Main {
 		
 		while(loop1Break) {
 		
-			System.out.println("Enter letters, all lowercase, no spaces, all on one line.");
+			System.out.println("Enter letters, no spaces, all on one line.");
 			Scanner scan = new Scanner(System.in);
 			input = scan.nextLine();
 			
@@ -62,6 +62,8 @@ public class Main {
 				loop1Break = false;
 			}
 		}
+		
+		input = input.toLowerCase();
 		
 		/*
 		 * Sets up the variables used in the recursive algorithm, wordFinder.
